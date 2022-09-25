@@ -9,10 +9,19 @@ import UIKit
 
 class DetailsVC: UIViewController {
 
+    @IBOutlet weak var TextLabel: UILabel!
+    
+    
+    @IBOutlet weak var landmarkImage: UIImageView!
+    
+    var selectedText=""
+    var selectedImage=UIImage()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        TextLabel.text=selectedText
+        landmarkImage.image=selectedImage
     }
     
 
